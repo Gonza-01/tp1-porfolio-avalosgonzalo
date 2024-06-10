@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
+    max-width: 1580px;
     width: 100%;
 }
 
@@ -107,7 +107,7 @@ footer {
     height: auto;
     background: black;
     position: absolute;
-    left: 68%;
+    left: 67%;
     top: 60%;
     padding: 20px 40px 50px 40px;
 }
@@ -144,8 +144,9 @@ h3 {
     max-width: 484px;
 }
 
-.presentacion article {
+.presentacion aside {
     width: 100%;
+    max-width: 600px;
 }
 
 .contenedor-footer {
@@ -164,4 +165,86 @@ h3 {
     align-items: flex-start;
     width: 100%;
     max-width: 160px;
+}
+
+.personaje-corre {
+    position: absolute;
+    top: 60%;
+    right: 45%;
+    width: 1250px;
+    height: 350px;
+    background-image: url(img/personaje-frames/pose_20.svg);
+    animation-name: corre;
+    animation-duration: 2.10s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: step-start;
+    animation-fill-mode: none;
+}
+
+@keyframes corre {
+    0% { background-image: url(img/personaje-frames/pose_2.svg);
+        transition-duration: 0;
+    }
+
+    5% { background-image: url(img/personaje-frames/pose_3.svg);
+        transition-duration: 0;
+    }
+
+    10% { background-image: url(img/personaje-frames/pose_4.svg);
+        transition-duration: 0;
+    }
+
+    15% { background-image: url(img/personaje-frames/pose_5.svg);
+        transition-duration: 0;
+    }
+
+    20% { background-image: url(img/personaje-frames/pose_6.svg);
+        transition-duration: 0;
+    }
+
+    25% { background-image: url(img/personaje-frames/pose_7.svg);
+        transition-duration: 0;
+    }
+
+    30% { background-image: url(img/personaje-frames/pose_8.svg);
+        transition-duration: 0;
+    }
+
+    35% { background-image: url(img/personaje-frames/pose_9.svg);
+        transition-duration: 0;
+    }
+
+    40% { background-image: url(img/personaje-frames/pose_10.svg);
+    }
+
+    45% { background-image: url(img/personaje-frames/pose_11.svg);
+    }
+
+    50% { background-image: url(img/personaje-frames/pose_12.svg);
+    }
+
+    55% { background-image: url(img/personaje-frames/pose_13.svg);
+    }
+
+    60% { background-image: url(img/personaje-frames/pose_14.svg);
+    }
+
+    65% { background-image: url(img/personaje-frames/pose_15.svg);
+    }
+
+    70% { background-image: url(img/personaje-frames/pose_16.svg);
+    }
+    75% { background-image: url(img/personaje-frames/pose_17.svg);
+    }
+    80% { background-image: url(img/personaje-frames/pose_18.svg);
+    }
+    85% { background-image: url(img/personaje-frames/pose_19.svg);
+    }
+    90% { background-image: url(img/personaje-frames/pose_20.svg);
+    }
+    95% { background-image: url(img/personaje-frames/pose_20.svg);
+    }
+    100% { background-image: url(img/personaje-frames/pose_20.svg);
+    }
 }
