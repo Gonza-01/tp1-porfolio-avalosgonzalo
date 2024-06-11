@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    cursor: url(img/cursor.png), auto;
+}
+
 main  {
     display: flex;
     justify-content: center;
@@ -63,7 +67,20 @@ header {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
+.navconteiner li a:hover {
+    text-decoration: none;
+    color: #ffd900;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
+
 
 .inicio {
     display: flex;
@@ -162,20 +179,20 @@ h3 {
 .redes {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     max-width: 160px;
 }
 
 .personaje-corre {
     position: absolute;
-    top: 60%;
-    right: 45%;
+    top: 58%;
+    right: 46%;
     width: 1250px;
     height: 350px;
     background-image: url(img/personaje-frames/pose_20.svg);
     animation-name: corre;
-    animation-duration: 2.10s;
+    animation-duration: 2s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-timing-function: step-start;
@@ -214,7 +231,6 @@ h3 {
     35% { background-image: url(img/personaje-frames/pose_9.svg);
         transition-duration: 0;
     }
-
     40% { background-image: url(img/personaje-frames/pose_10.svg);
     }
 
@@ -226,7 +242,7 @@ h3 {
 
     55% { background-image: url(img/personaje-frames/pose_13.svg);
     }
-
+    
     60% { background-image: url(img/personaje-frames/pose_14.svg);
     }
 
@@ -235,16 +251,36 @@ h3 {
 
     70% { background-image: url(img/personaje-frames/pose_16.svg);
     }
+
     75% { background-image: url(img/personaje-frames/pose_17.svg);
     }
+
     80% { background-image: url(img/personaje-frames/pose_18.svg);
     }
+
     85% { background-image: url(img/personaje-frames/pose_19.svg);
     }
+
     90% { background-image: url(img/personaje-frames/pose_20.svg);
     }
-    95% { background-image: url(img/personaje-frames/pose_20.svg);
+
+    95% { background-image: none;
     }
-    100% { background-image: url(img/personaje-frames/pose_20.svg);
+
+    100% { background-image: none;
+
     }
+}
+
+.pose-hover {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.pose-hover:hover {
+    opacity: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
