@@ -49,6 +49,7 @@ header {
 }
 
 .navconteiner ul {
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,7 +66,7 @@ header {
     font-family: Anybody;
     font-size: 26px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
     cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
@@ -76,7 +77,7 @@ header {
     font-family: Anybody;
     font-size: 26px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
     cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
@@ -185,6 +186,7 @@ h3 {
 }
 
 .personaje-corre {
+    z-index: 1;
     position: absolute;
     top: 58%;
     right: 46%;
@@ -201,35 +203,27 @@ h3 {
 
 @keyframes corre {
     0% { background-image: url(img/personaje-frames/pose_2.svg);
-        transition-duration: 0;
     }
 
     5% { background-image: url(img/personaje-frames/pose_3.svg);
-        transition-duration: 0;
     }
 
     10% { background-image: url(img/personaje-frames/pose_4.svg);
-        transition-duration: 0;
     }
 
     15% { background-image: url(img/personaje-frames/pose_5.svg);
-        transition-duration: 0;
     }
 
     20% { background-image: url(img/personaje-frames/pose_6.svg);
-        transition-duration: 0;
     }
 
     25% { background-image: url(img/personaje-frames/pose_7.svg);
-        transition-duration: 0;
     }
 
     30% { background-image: url(img/personaje-frames/pose_8.svg);
-        transition-duration: 0;
     }
 
     35% { background-image: url(img/personaje-frames/pose_9.svg);
-        transition-duration: 0;
     }
     40% { background-image: url(img/personaje-frames/pose_10.svg);
     }
@@ -273,14 +267,169 @@ h3 {
 }
 
 .pose-hover {
+    position: absolute;
     width: 100%;
     height: auto;
     opacity: 0;
 }
 
 .pose-hover:hover {
+    position: absolute;
     opacity: 1;
     transition-timing-function: ease-in-out;
     transition-duration: 0.25s;
+}
+
+.contenedor-flor {
+    position: absolute;
+    top: 13%;
+}
+
+.dibujo-flor {
+    position: absolute;
+    animation-name: flor;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flor {
+    0% { transform: translateY(5px);
+    }
+    25% { transform: translateY(10px);
+    }
+    50% { transform: translateY(15px);
+    }
+    75% { transform: translateY(20px);
+    }
+    100% { transform: translateY(30px);
+    }
+
+}
+
+
+/*----Contacto----*/
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 66%;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.personaje-dialogo{
+    display: flex;
+    width: 700px;
+    height: 663px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    background-color: #000;
+    width: 220px;
+    height: 68px;
+    border-radius: 50px;
+}
+
+.formulario-seccion {
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    font-family: Anybody;
+    font-size: 22px;
+}
+
+label {
+    display: block;
+    padding-bottom: 14px;
+    padding-top: 22px;
+}
+
+input {
+    border: 5px solid black;
+    width: 535px;
+    height: 60px;
+    padding-left: 10px;
+    font-family: Anybody;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#mensaje {
+    border: 5px solid black;
+    width: 535px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-left: 10px;
+    font-family: Anybody;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.boton-enviar {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 220px;
+    height: 68px;
+    border: 5px solid #000;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+.boton-enviar:hover {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 220px;
+    height: 68px;
+    border: 5px solid #000;
+    background-color: #ffd900;
+    border-radius: 50px;
+    cursor: pointer;
     cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
+
+.enviar-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }

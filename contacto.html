@@ -24,23 +24,23 @@
             </div>
     </header>
     <main>
-        <section class="inicio">
-    
-            <div class="imagenes">
-                <div class="personaje-corre">
-                    <img class="pose-hover"src="img/personaje-frames/pose_21.svg" width="1250px" height="320px">
-                </div>
-                <div class="contenedor-flor">
-                    <img class="dibujo-flor" src="img/dibujo_flor.svg" width="443px" height="695px" alt="dibujo-flor">
-                </div> 
-                    <img src="img/ga_lineal_inicio.svg" width="1063px" height="970px" alt="letras-ga-en-trazos">
-            </div>
-            <div class="presentacion">
-                <aside>
-                    <h1>GONZALO AVALOS</h1>
-                    <h3>Diseñador Gráfico | Porfolio</h3>
-                    <p class="bloque-inicio">¡Hola! Soy un diseñador gráfico de Buenos Aires, Argentina. A la hora de diseñar, me gusta encontrar soluciones prácticas que colaboren con las ideas del cliente a la par de mi trabajo.</p>
-                </aside>
+        <section class="contacto">
+            <img src="img/personaje_saluda.svg" width="700px" height="663px" alt="personaje-saluda">
+            <div class="formulario-seccion">
+                <h4>Contacto</h4>
+                <form method="post" action="mailto:avalosgonzalo100@gmail.com.ar?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain" class="formulario">
+                    <label for="nombre"> Nombre y Apellido:</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Homero Simpsons" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" maxlength="50" placeholder="simpsonshomero1999@gmail.com" required>
+                    
+                    <label for="mensaje">Tu Consulta</label>
+                    <textarea name="mensaje" id="mensaje" maxlength="800" placeholder="Me interesaría saber..."></textarea>
+                    <div class="enviar-div">
+                        <input type="submit" value="Enviar" formenctype="text/plain" class="boton-enviar">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
