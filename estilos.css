@@ -151,11 +151,12 @@ h2 {
 
 h3 {
     color: #FFF;
-    font-family: Archivo;
-    font-size: 26px;
+    font-family: Anybody;
+    font-size: 25px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    letter-spacing: 1.5px;
 }
 
 .bloque-inicio {
@@ -664,8 +665,7 @@ input {
     font-family: Anybody;
     font-size: 26px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
+    font-weight: 300;
     letter-spacing: 1.3px;
 }
 
@@ -677,3 +677,145 @@ input {
     position: sticky;
 }
 /*---- Video ----*/
+
+/*---- Galeria ----*/
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+#fondo-galeria {
+	background-color: black;
+	opacity: 0.9;
+	position: fixed;
+    display: flex;
+    align-items: center;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 30;
+}
+
+.close {
+    z-index: 5;
+	top: 10px;
+	right: 2%;
+    cursor: pointer;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+    position: absolute;
+}
+
+#foto-1 {
+	background-image: url("img/galeria/winka_marca.png");
+}
+
+#foto-2 {
+	background-image: url("img/galeria/winka_publicidad-2.png");
+}
+
+#foto-3 {
+	background-image: url("img/galeria/winka_marca2.png");
+}
+#foto-4 {
+	background-image: url("img/galeria/winka_publicidad.png");
+}
+
+#foto-5 {
+	background-image: url("img/galeria/winka_botella.jpg");
+}
+
+#foto-6 {
+	background-image: url("img/galeria/winka_celu.png");
+}
+
+#fondo-galeria {
+    z-index: 2;
+    color: #000;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+.subtitulo-galeria {
+    color: black;
+}
+
+.flecha {
+    top: 50vh;
+    position: relative;
+}
+
+.flecha-der {
+    top: 50vh;
+    left: 120vh;
+    position: relative;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1500px;
+    padding-bottom: 6%;
+}
+
+#miniaturas {
+	width: 80%;
+	justify-content: center;
+	list-style: none;
+	margin-top: 100px;
+	flex-wrap: wrap;
+}
+
+#miniaturas a{
+    cursor: pointer;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
+
+.info-galeria{
+    width: 100%;
+    max-width: 600px;
+    padding: 5%;
+}
+
+.texto-galeria {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 788px;
+    color: #000;
+    font-family: Anybody;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.3px;
+}
