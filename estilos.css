@@ -34,10 +34,6 @@ header {
     width: 100%;
 }
 
-.index-footer {
-    display: none;
-}
-
 .cabecera {
     display: flex;
     justify-content: center;
@@ -132,17 +128,15 @@ footer {
 }
 
 .presentacion {
-    width: 100%;
+    width: 700px;
     height: auto;
     background: black;
     position: absolute;
-    top: 100%;
+    top: 60%;
+    left: 66%;
     padding: 20px 40px 50px 40px;
 }
 
-.diseno-main {
-    display: none;
-}
 
 h1 {
     font-family: Anton;
