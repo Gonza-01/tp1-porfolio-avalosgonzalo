@@ -82,6 +82,10 @@ header {
     cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
 
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
 .ga-hover {
     cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
@@ -1055,36 +1059,44 @@ input {
         flex-direction: column;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
     footer {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         background-color: #000;
+        margin-top: 20%;
     }
     
     .contenedor-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 500px;
         height: auto;
+        padding-left: 4%;
     }
 
     .texto-footer {
-        text-align: center;
+        max-width: 500px;
         color: #FFF;
         font-family: Anybody;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0.24px;
-        padding-left: 20px;
     }
+
     #galeria-oculta {
 		max-width: 400px;
 	}
@@ -1105,21 +1117,25 @@ input {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 200px;
+        padding-bottom: 2%;
+        padding-left: 3%;
     }
 
     .presentacion {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
         height: auto;
         background: black;
-        margin-top: 10%;
+        margin-bottom: 80%;
+        position: absolute;
+        top: 86%;
     }
 
     header {
-        z-index: 3;
+        z-index: 2;
         width: 100%;
         height: 110px;
         background-color: #000;
@@ -1130,6 +1146,14 @@ input {
         top: 0;
     }
 
+    .abrir-menu {
+        display: block;
+        background-color: black;
+    }
+    .cerrar-menu {
+        display: block;
+        background-color: black;
+    }
     .inicio {
         display: flex;
         flex-direction: column;
@@ -1143,7 +1167,7 @@ input {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 600px;
+        max-width: 500px;
         width: 100%;
     }
     
@@ -1154,52 +1178,47 @@ input {
         width: 100%;
     }
     .navconteiner {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 3;
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        max-width: 1200px;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
     
     .navconteiner ul {
         padding-top: 10px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;
         list-style: none;
         text-decoration: none;
         width: 100%;
-        max-width: 795px;
     }
-    
-    .navconteiner li a {
-        text-decoration: none;
-        color: #FFF;
-        text-align: center;
-        font-family: Anybody;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        cursor: url(img/estrella_cursor.png) 0 0, auto;
+    .navconteiner ul li {
+        padding-bottom: 8%;
     }
-    .navconteiner li a:hover {
-        text-decoration: none;
-        color: #ffd900;
-        text-align: center;
-        font-family: Anybody;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        cursor: url(img/estrella_cursor.png) 0 0, auto;
+
+    .nav-visible {
+        opacity: 1;
+        visibility: visible;
     }
 
     .ga-grande {
         width: 100%;
-        z-index: 1;
-        position: absolute;
+        height: 760px;
     }
+
     .contenedor-abeja, .contenedor-flor, .contenedor-control {
         display: none;
     }
@@ -1220,12 +1239,13 @@ input {
         justify-content: flex-start;
         width: 100%;
         height: auto;
+        margin-bottom: 10%;
     }
     .personaje-corre {
-        z-index: 2;
+        z-index: 1;
         position: absolute;
-        top: 58%;
-        right: 10%;
+        top: 36%;
+        right: 6%;
         width: 1250px;
         height: 350px;
         background-image: url(img/personaje-frames/pose_20.svg);
@@ -1236,5 +1256,8 @@ input {
         animation-timing-function: step-start;
         animation-fill-mode: none;
     }
+    .pose-hover {
+    display: none;
+}
 
 }

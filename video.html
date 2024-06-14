@@ -9,19 +9,36 @@
 </head>
 <body>
     <header>
-            <div class="contenedor-header">
-                <div>
-                    <a class="ga-hover" href="index.html"><img src="img/ga_plenos.svg" width="65px" height="59px" alt="ga-logo"></a>
-                </div>
-                <nav class="navconteiner">
-                    <ul>
-                        <li><a href="sobre-mi.html" target="_self">Sobre mi</a></li>
-                        <li><a href="trabajos.html" target="_self">Diseño</a></li>
-                        <li><a href="video.html" target="_self">Video</a></li>
-                        <li><a href="contacto.html" target="_self">Contacto</a></li>
-                    </ul>
-                </nav>
+        <div class="contenedor-header">
+            <div>
+                <a class="ga-hover" href="index.html"><img src="img/ga_plenos.svg" width="65px" height="59px" alt="ga-logo"></a>
             </div>
+            <div id="abrir" class="abrir-menu"><img src="img/boton_abrir.png" width="60px" height="60px"></div>
+            <nav class="navconteiner" id="nav">
+                <div class="cerrar-menu" id="cerrar"><img src="img/boton_cerrar.png" width="60px" height="60px"></div>
+                <ul>
+                    <li><a href="sobre-mi.html" target="_self">Sobre mi</a></li>
+                    <li><a href="trabajos.html" target="_self">Diseño</a></li>
+                    <li><a href="video.html" target="_self">Video</a></li>
+                    <li><a href="contacto.html" target="_self">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!---Script Boton Hamburguesa --->
+        <script type="text/javascript">
+            const nav = document.querySelector("#nav")
+            const abrir = document.querySelector("#abrir")
+            const cerrar = document.querySelector("#cerrar")
+
+            abrir.addEventListener("click", () => {
+                nav.classList.add("nav-visible");
+        })
+        cerrar.addEventListener("click", () => {
+            nav.classList.remove("nav-visible");
+        })
+
+        </script>
+    <!---Script Boton Hamburguesa --->
     </header>
     <main>
         <div class="seccion-videos">
