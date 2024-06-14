@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function cambiarDisplay(visibilidadNueva){
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria(){
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria(){
+            cambiarDisplay('none')
+        }
+    </script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="gonza_favicon.ico">
+    <title>Avalos Gonzalo Porfolio</title>
+</head>
+<body>
+    <header>
+            <div class="contenedor-header">
+                <div>
+                    <a href="index.html"><img src="img/ga_plenos.svg" width="65px" height="59px" alt="ga-logo"></a>
+                </div>
+                <nav class="navconteiner">
+                    <ul>
+                        <li><a href="sobre-mi.html" target="_self">Sobre mi</a></li>
+                        <li><a href="trabajos.html" target="_self">Diseño</a></li>
+                        <li><a href="video.html" target="_self">Video</a></li>
+                        <li><a href="contacto.html" target="_self">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <div class="contenedor-galeria">
+            <div class="info-galeria">
+                <img src="img/cartel_bondis.png" width="400x" height="354px">
+                <h2>Bondis x Bs As</h2>
+                <h3 class="subtitulo-galeria">Infografía</h3>
+                <p class="texto-galeria">La consigna de este trabajo práctico era crear una infografía desplegable con una temática a elección libre. En este caso, junto con mi compañero Martin Bertillod, decidimos la tematica de los bondis porteños más utilizados de la Capital Federal.</p>
+            </div>
+            <section id="miniaturas">
+                <a href="#foto-7"><img src="img/galeria/bondis_mini_1.png" width="320px" height="320px" alt="Gorrión" onClick="mostrarGaleria()"></a>
+                <a href="#foto-8"><img src="img/galeria/bondis_mini_2.png" width="320px" height="320px" alt="Lechuza" onClick="mostrarGaleria()"></a>
+                <a href="#foto-9"><img src="img/galeria/bondis_mini_3.png" width="320px" height="320px" alt="Teyú" onClick="mostrarGaleria()"></a>
+                <a href="#foto-10"><img src="img/galeria/bondis_mini_4.png" width="320px" height="320px" alt="Gorrión" onClick="mostrarGaleria()"></a>
+                <a href="#foto-11"><img src="img/galeria/bondis_mini_5.png" width="320px" height="320px" alt="Lechuza" onClick="mostrarGaleria()"></a>
+                <a href="#foto-12"><img src="img/galeria/bondis_mini_6.png" width="320px" height="320px" alt="Teyú" onClick="mostrarGaleria()"></a>
+            </section>
+            <section id="galeria">
+                <ul id="galeria-oculta">
+                        <li class="fraccion-galeria" id="foto-7">
+                                <a href="#" class="primer-ultima-flecha"><img class="flecha" src="img/galeria/flecha_iz.png" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/galeria/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-8"><img class="flecha-der" src="img/galeria/flecha_der.png" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-8">
+                                <a href="#foto-7"><img class="flecha" src="img/galeria/flecha_iz.png" width="50px" height="50px" alt="Anterior"></
+                                <img class="close" src="img/galeria/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-9"><img class="flecha-der" src="img/galeria/flecha_der.png" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-9">
+                                <a href="#foto-8"><img class="flecha" src="img/galeria/flecha_iz.png" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/galeria/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-10"><img class="flecha-der" src="img/galeria/flecha_der.png" width="50px" height="50px" alt="Siguiente"></a>
+                            
+                        <li class="fraccion-galeria" id="foto-10">
+                                <a href="#foto-9"><img class="flecha" src="img/galeria/flecha_iz.png" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/galeria/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-11"><img class="flecha-der" src="img/galeria/flecha_der.png" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-11">
+                                <a href="#foto-10"><img class="flecha" src="img/galeria/flecha_iz.png" width="50px" height="50px" alt="Anterior"></
+                                    <img class="close" src="img/galeria/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#foto-12"><img class="flecha-der" src="img/galeria/flecha_der.png" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                        <li class="fraccion-galeria" id="foto-12">
+                                <a href="#foto-11"><img class="flecha" src="img/galeria/flecha_iz.png" width="50px" height="50px" alt="Anterior"></a>
+                                <img class="close" src="img/galeria/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                                <a href="#" class="primer-ultima-flecha"><img class="flecha-der" src="img/galeria/flecha_der.png" width="50px" height="50px" alt="Siguiente"></a>
+                        </li>
+                </ul>
+                <div id="fondo-galeria"></div>
+            </section>
+            <div class="boton-volver">
+                <a href="trabajos.html"><img src="img/flecha_volver.png" width="100px" height="100px"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <section class="redes">
+                <a href="https://www.instagram.com/gonzaa_design/" target="_blank"><img src="img/instagram_logo.svg" width="34px" height="34px" alt="logo-instagram"></a>
+                <a href="https://www.behance.net/gonzaloavalos1" target="_blank"><img src="img/behance_logo.svg" width="45px" height="28px" alt="logo-behance"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="img/youtube_logo.svg" width="41px" height="30px" alt="logo-youtube"></a>
+            </section>
+            <p class="texto-footer">© Todos los derechos reservados Unla Computación 3, año 2024.</p>
+        </div>
+    </footer>
+</body>
+</html>
