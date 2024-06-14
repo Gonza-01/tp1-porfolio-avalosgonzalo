@@ -1065,6 +1065,8 @@ input {
         height: auto;
     }
 
+    /*--- Index-Inicio ---*/
+
     footer {
         width: 100%;
         height: auto;
@@ -1259,5 +1261,115 @@ input {
     .pose-hover {
     display: none;
 }
+    /*--- Index-Inicio ---*/
 
+    /*--- Contacto---*/
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5%;
+        margin-left: 8%;
+    }
+    
+    .personaje-saludando {
+        padding-top: 26%;
+        margin-right: 10%;
+        width: 100%;
+        height: 473px;
+    }
+    
+    h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        font-family: Anton;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.4px;
+        background-color: #000;
+        width: 220px;
+        height: 68px;
+        border-radius: 50px;
+    }
+    
+    .formulario-seccion {
+        width: 400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        font-family: Anybody;
+        font-size: 22px;
+    }
+    
+    label {
+        display: block;
+        padding-bottom: 14px;
+        padding-top: 22px;
+    }
+    
+    input {
+        border: 5px solid black;
+        width: 500px;
+        height: 60px;
+        padding-left: 10px;
+        font-family: Anybody;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    #mensaje {
+        border: 5px solid black;
+        width: 500px;
+        height: 150px;
+        margin-bottom: 20px;
+        padding-top: 12px;
+        padding-left: 10px;
+        font-family: Anybody;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .boton-enviar {
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        text-align: center;
+        font-family: 'Press Start 2P', system-ui;
+        font-size: 18px;
+        letter-spacing: 1px;
+        width: 220px;
+        height: 68px;
+        border: 5px solid #000;
+        background-color: #FFF;
+        border-radius: 50px;
+    }
+    
+    .enviar-div {
+        display: flex;
+        justify-content: flex-end;
+        width: 500px;
+    }
+    
+    /* ----- Contacto FIN---- */
 }
