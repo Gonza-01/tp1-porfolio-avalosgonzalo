@@ -82,6 +82,9 @@ header {
     cursor: url(img/estrella_cursor.png) 0 0, auto;
 }
 
+.ga-hover {
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
 
 .inicio {
     display: flex;
@@ -400,7 +403,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 66%;
+    max-width: 72%;
     height: auto;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -436,6 +439,7 @@ h4 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-right: 3%;
 
 }
 
@@ -811,51 +815,61 @@ input {
 /*---- MIEL----*/
 
 #foto-19 {
-	background-image: url("img/galeria/bondis_plus_1.png");
+	background-image: url("img/galeria/miel_plus_1.png");
 }
 
 #foto-20 {
-	background-image: url("img/galeria/bondis_plus_2.png");
+	background-image: url("img/galeria/miel_plus_2.png");
 }
 
 #foto-21 {
-	background-image: url("img/galeria/bondis_plus_3.jpg");
+	background-image: url("img/galeria/miel_plus_3.png");
 }
 #foto-22 {
-	background-image: url("img/galeria/bondis_plus_4.jpg");
+	background-image: url("img/galeria/miel_plus_4.png");
 }
 
 #foto-23 {
-	background-image: url("img/galeria/bondis_plus_5.jpg");
+	background-image: url("img/galeria/miel_plus_5.png");
 }
 
 #foto-24 {
-	background-image: url("img/galeria/bondis_plus_6.jpg");
+	background-image: url("img/galeria/miel_plus_6.png");
+}
+
+.miel-titulo {
+    font-family: Anton;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    padding-bottom: 1%;
 }
 
 /*---- TIMEOUT----*/
 
 #foto-25 {
-	background-image: url("img/galeria/bondis_plus_1.png");
+	background-image: url("img/galeria/timeout_plus_1.png");
 }
 
 #foto-26 {
-	background-image: url("img/galeria/bondis_plus_2.png");
+	background-image: url("img/galeria/timeout_plus_2.png");
 }
 
 #foto-27 {
-	background-image: url("img/galeria/bondis_plus_3.jpg");
+	background-image: url("img/galeria/timeout_plus_3.jpg");
 }
 #foto-28 {
-	background-image: url("img/galeria/bondis_plus_4.jpg");
+	background-image: url("img/galeria/timeout_plus_4.png");
 }
 
 #foto-29 {
-	background-image: url("img/galeria/bondis_plus_5.jpg");
+	background-image: url("img/galeria/timeout_plus_5.png");
 }
 
 #foto-30 {
-	background-image: url("img/galeria/bondis_plus_6.jpg");
+	background-image: url("img/galeria/timeout_plus_6.png");
 }
 
 #fondo-galeria {
