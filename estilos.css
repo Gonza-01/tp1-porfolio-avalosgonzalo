@@ -1247,7 +1247,7 @@ input {
         z-index: 1;
         position: absolute;
         top: 36%;
-        right: 6%;
+        right: 1%;
         width: 1250px;
         height: 350px;
         background-image: url(img/personaje-frames/pose_20.svg);
@@ -1326,7 +1326,8 @@ input {
     
     input {
         border: 5px solid black;
-        width: 500px;
+        width: 100%;
+        max-width: 450px;
         height: 60px;
         padding-left: 10px;
         font-family: Anybody;
@@ -1338,7 +1339,8 @@ input {
     
     #mensaje {
         border: 5px solid black;
-        width: 500px;
+        width: 100%;
+        max-width: 450px;
         height: 150px;
         margin-bottom: 20px;
         padding-top: 12px;
@@ -1368,7 +1370,7 @@ input {
     .enviar-div {
         display: flex;
         justify-content: flex-end;
-        width: 500px;
+        width: 400px;
     }
     
     /* ----- Contacto FIN---- */
