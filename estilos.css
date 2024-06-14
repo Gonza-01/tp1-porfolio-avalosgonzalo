@@ -34,6 +34,10 @@ header {
     width: 100%;
 }
 
+.index-footer {
+    display: none;
+}
+
 .cabecera {
     display: flex;
     justify-content: center;
@@ -134,6 +138,10 @@ footer {
     position: absolute;
     top: 100%;
     padding: 20px 40px 50px 40px;
+}
+
+.diseno-main {
+    display: none;
 }
 
 h1 {
@@ -1062,7 +1070,16 @@ input {
     main {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         height: auto;
+    }
+
+   .diseno-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 5%;
     }
 
     /*--- Index-Inicio ---*/
@@ -1080,16 +1097,15 @@ input {
     .contenedor-footer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
-        max-width: 500px;
         height: auto;
-        padding-left: 4%;
     }
 
     .texto-footer {
         max-width: 500px;
         color: #FFF;
+        text-align: center;
         font-family: Anybody;
         font-size: 20px;
         font-style: normal;
@@ -1185,15 +1201,17 @@ input {
         z-index: 3;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: end;
         gap: 1rem;
-        width: 200px;
+        width: 300px;
         height: 100vh;
         position: absolute;
         top: 0;
         right: 0;
         background-color: black;
-        padding: 2rem;
+        padding-top: 0;
+        padding: 4rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
     
@@ -1463,4 +1481,191 @@ input {
     }
 
     /*---- Sobre mi FIN----*/
+    /*---- Video ----*/
+
+    .seccion-videos {
+        max-width: 1600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .columna-videos {
+        width: 100%;
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+        margin-top: 26%;
+    }
+
+    .item-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 89%;
+        height: 258px;
+        background-image: url(img/video-marco.svg);
+        background-size: cover;
+    }
+
+    .item-video video {
+        width: 100%;
+        height: 240px;
+    }
+
+    .pie-de-video {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        max-width: 888px;
+        padding-top: 10px;
+        padding-bottom: 10%;
+    }
+
+    .texto-video {
+        padding-top: 35px;
+        padding-left: 18px;
+        width: 100%;
+        max-width: 400px;
+        color: #000;
+        font-family: Anybody;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 1.3px;
+    }
+
+    .personaje-cine {
+        padding: 6%;
+        max-width: 500px;
+        width: 100%;
+        height: 350px;
+        margin-right: 2%;
+    }
+
+    .asterisco {
+        width: 24px;
+        height: auto;
+    }
+
+    /*---- Video FIN ----*/
+
+    /*---- Diseño ----*/
+
+    .seccion-categorias {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 6%;
+        background-image: none;
+        margin-left: 10%;
+    }
+
+    .gotas{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
+
+    .categorias-hover {
+        display: none;
+    }
+
+    .pie-de-categoria {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 520px;
+        padding-bottom: 10%;
+    }
+    .item {
+        padding-bottom: 00%;
+    }
+    .item-1{
+        padding-top: 0%;
+        padding-bottom: 00%;
+    }
+    .item-2 {
+        padding-bottom: 0%;
+    }
+    .item-3 {
+        padding-top: 0%;
+        padding-bottom: 00%;
+    }
+
+    .columna-1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 450px;
+        height: auto;
+        padding-top: 60%;
+    }
+
+    .columna-2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .personaje-duerme {
+        width: 100%;
+        height: 428px;
+        margin-top: 16%;
+    }
+
+    .titulo-diseño {
+        margin-top: 22%;
+    }
+
+    .sueño {
+        margin-top: 15%;
+        margin-left: 5%;
+        position: absolute;
+    }
+    
+    .zzz {
+        position: absolute;
+        top: 15%;
+        left: 1%;
+        animation-name: zzz;
+        animation-duration: 1.85s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes zzz {
+        0% { transform: translateY(-10px);
+        }
+
+        100% { transform: translateY(-200px);
+            opacity: 0;
+        }
+    }
+
+    .personaje-habla-diseño {
+        display: none;
+    }
+    
+    .index-footer {
+        display: flex;
+        margin-top: 30%;
+    }
 }
