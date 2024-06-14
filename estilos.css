@@ -124,12 +124,11 @@ footer {
 }
 
 .presentacion {
-    width: auto;
+    width: 100%;
     height: auto;
     background: black;
     position: absolute;
-    left: 67%;
-    top: 60%;
+    top: 100%;
     padding: 20px 40px 50px 40px;
 }
 
@@ -1048,4 +1047,194 @@ input {
     100% { transform: translateY(-200px);
         opacity: 0;
     }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+    }
+    
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-footer {
+        text-align: center;
+        color: #FFF;
+        font-family: Anybody;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.24px;
+        padding-left: 20px;
+    }
+    #galeria-oculta {
+		max-width: 400px;
+	}
+	
+	.fraccion-galeria {
+		min-width: 400px;
+	}
+	
+	.close {
+		top: 50px;
+		right: 5%
+	}
+	
+	#miniaturas {
+		margin: 50px 0 50px 0; 
+	}
+    .redes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        background: black;
+        margin-top: 10%;
+    }
+
+    header {
+        z-index: 3;
+        width: 100%;
+        height: 110px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+    }
+    
+    .cabecera {
+        display: flex;
+        justify-content: center;
+        max-width: 1600px;
+        width: 100%;
+    }
+    .navconteiner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    .navconteiner ul {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        max-width: 795px;
+    }
+    
+    .navconteiner li a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Anybody;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: url(img/estrella_cursor.png) 0 0, auto;
+    }
+    .navconteiner li a:hover {
+        text-decoration: none;
+        color: #ffd900;
+        text-align: center;
+        font-family: Anybody;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: url(img/estrella_cursor.png) 0 0, auto;
+    }
+
+    .ga-grande {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+    .contenedor-abeja, .contenedor-flor, .contenedor-control {
+        display: none;
+    }
+    .bloque-inicio {
+        padding-top: 20px;
+        color: #FFF;
+        font-family: Anybody;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.9px;
+        width: 100%;
+    }
+
+    .imagenes {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+    }
+    .personaje-corre {
+        z-index: 2;
+        position: absolute;
+        top: 58%;
+        right: 10%;
+        width: 1250px;
+        height: 350px;
+        background-image: url(img/personaje-frames/pose_20.svg);
+        animation-name: corre;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+        animation-timing-function: step-start;
+        animation-fill-mode: none;
+    }
+
 }
