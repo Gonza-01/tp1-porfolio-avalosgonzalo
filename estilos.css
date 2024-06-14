@@ -518,7 +518,7 @@ input {
     width: 100%;
 }
 
-/* ----- Contacto---- */
+/* ----- Contacto FIN---- */
 
 /*---- Sobre mi ----*/
 
@@ -614,7 +614,7 @@ input {
     background-color: black;
 }
 
-/*---- Sobre mi ----*/
+/*---- Sobre mi FIN----*/
 
 /*---- Video ----*/
 
@@ -676,7 +676,7 @@ input {
     margin-left: 5%;
     position: sticky;
 }
-/*---- Video ----*/
+/*---- Video FIN ----*/
 
 /*---- Galeria ----*/
 
@@ -818,4 +818,118 @@ input {
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 1.3px;
+}
+
+.boton-volver {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 80vh;
+    cursor: pointer;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
+
+.boton-volver a:hover {
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
+
+/*---- Galeria FIN ----*/
+
+/*---- Diseño ----*/
+
+.seccion-categorias {
+    max-width: 1560px;
+    height: 2976px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    background-image: url(img/camino_pixel.svg);
+    background-repeat: no-repeat;
+}
+
+.gotas{
+    position: absolute;
+}
+
+.gotas:hover {
+    opacity: 0;
+    cursor: url(img/estrella_cursor.png) 0 0, auto;
+}
+
+.pie-de-categoria {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    padding-top: 10px;
+    padding-bottom: 10%;
+}
+.item {
+    padding-bottom: 50%;
+}
+.item-1{
+    padding-top: 8%;
+    padding-bottom: 30%;
+}
+.item-2 {
+    padding-bottom: 50%;
+}
+.item-3 {
+    padding-top: 8%;
+    padding-bottom: 50%;
+}
+
+.columna-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    max-width: 641px;
+    height: auto;
+    padding-top: 15%;
+}
+
+.columna-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 641px;
+    height: auto;
+}
+
+.titulo-diseño {
+    position: absolute;
+    top: 22%;
+    padding-left: 10px;
+}
+
+.sueño {
+    margin-top: 4.5%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.zzz {
+    position: absolute;
+    animation-name: zzz;
+    animation-duration: 1.85s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zzz {
+    0% { transform: translateY(-10px);
+    }
+
+    100% { transform: translateY(-200px);
+        opacity: 0;
+    }
 }
