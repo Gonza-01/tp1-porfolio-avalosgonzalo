@@ -1301,7 +1301,9 @@ input {
     }
     
     .formulario-seccion {
-        width: 400px;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
         height: auto;
         display: flex;
         justify-content: center;
@@ -1327,7 +1329,6 @@ input {
     input {
         border: 5px solid black;
         width: 100%;
-        max-width: 450px;
         height: 60px;
         padding-left: 10px;
         font-family: Anybody;
@@ -1340,7 +1341,6 @@ input {
     #mensaje {
         border: 5px solid black;
         width: 100%;
-        max-width: 450px;
         height: 150px;
         margin-bottom: 20px;
         padding-top: 12px;
